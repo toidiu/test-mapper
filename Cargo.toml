@@ -1,0 +1,15 @@
+[package]
+name = "test-mapper"
+version = "0.1.0"
+authors = ["toidiu <apoorv@toidiu.com>"]
+
+[dependencies]
+postgres = "~0.15"
+
+[dependencies.postgres-mapper]
+features = ["postgres-support"]
+path = "../postgres-mapper"
+
+[dependencies.postgres-mapper-derive]
+features = ["postgres-mapper", "postgres-support"]
+path = "../postgres-mapper/postgres_mapper_derive"
